@@ -63,3 +63,9 @@ typings/
 
 # next.js build output
 .next
+
+#ignore folder created by MacOS
+.DS_Store
+
+#IntelliJ configs
+.idea
