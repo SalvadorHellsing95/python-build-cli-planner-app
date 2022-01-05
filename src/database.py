@@ -22,7 +22,8 @@ def add_reminder(text, date, ReminderClass):
     @param text:
     @type ReminderClass: class
     """
-    if not issubclass(ReminderClass, DeadlinedReminder):
+    reminder = ReminderClass(text, date)
+    if not isinstance(reminder, DeadlinedReminder):
         raise TypeError("Invalid Reminder Class")
     reminder = ReminderClass(text, date)
 
